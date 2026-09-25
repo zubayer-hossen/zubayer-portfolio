@@ -1,0 +1,16 @@
+{
+  "name": "zubayer-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack MERN portfolio platform with admin CMS, project marketplace and blog",
+  "scripts": {
+    "setup": "npm install && npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "dev": "concurrently -n api,web -c blue,magenta \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
