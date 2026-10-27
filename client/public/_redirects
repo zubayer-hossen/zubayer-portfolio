@@ -1,0 +1,4 @@
+# Keep React Router routes working on direct navigation and page refreshes.
+# Netlify serves the SPA entry point; React Router renders the matching page
+# or the project's custom 404 component for unknown paths.
+/*    /index.html   200
